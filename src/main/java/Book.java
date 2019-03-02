@@ -1,17 +1,14 @@
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.List;
-import java.util.Scanner;
+
 public class Book {
     int id ;
     String tittle;
-    String year;
+    int year;
     String ibdn;
     String cover;
-   List<Authors> idAuthors;
-   Categories idCategories;
+   String idAuthors;
+   String idCategories;
 
-    public Book(int id, String tittle, String year, String ibdn, String cover, List<Authors> idAuthors, Categories idCategories) {
+    public Book(int id, String tittle, int year, String ibdn, String cover, String idAuthors, String idCategories) {
         this.id = id;
         this.tittle = tittle;
         this.year = year;
@@ -19,6 +16,10 @@ public class Book {
         this.cover = cover;
         this.idAuthors = idAuthors;
         this.idCategories = idCategories;
+    }
+
+    public Book(int id, String tittle, String year, String ibdn, String cover, String idAuthors, String idCategories) {
+
     }
 
     @Override

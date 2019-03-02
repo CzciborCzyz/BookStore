@@ -1,10 +1,10 @@
-public class Authors {
+public class Author {
     String id;
     String name;
     String age ;
 
 
-    public Authors(String id, String name, String age) {
+    public Author(String id, String name, String age) {
         this.id = id;
         this.name = name;
         this.age = age;
@@ -12,7 +12,7 @@ public class Authors {
 
     @Override
     public String toString() {
-        return "Authors{" +
+        return "Author{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", age=" + age +
