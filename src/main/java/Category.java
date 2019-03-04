@@ -1,9 +1,9 @@
-public class Categories {
+public class Category {
     int nr;
     String categories;
     int type;
 
-    public Categories(int nr, String categories, int type) {
+    public Category(int nr, String categories, int type) {
         this.nr = nr;
         this.categories = categories;
         this.type = type;
@@ -11,7 +11,7 @@ public class Categories {
 
     @Override
     public String toString() {
-        return "Categories{" +
+        return "Category{" +
                 "nr=" + nr +
                 ", categories='" + categories + '\'' +
                 ", type=" + type +
