@@ -1,18 +1,20 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class BookFunction {
 
     public Book znajdz(List<Book> bookis, String ibdn) {
-        for (int i = 0; i < bookis.size(); i++) {
-            if (bookis.get(i).ibdn.equals(ibdn)) {
-                return bookis.get(i);
+        for (Book booki : bookis) {
+            if (booki.ibdn.equals(ibdn)) {
+                return booki;
             }
-        }
-        return null;
+        } return null;
+
+       // return bookis.stream().filter(booki->booki.ibdn.equals(ibdn)).findFirst().orElse(null);
+
     }
+
+
 
 
 //    Zwróć sumę lat wydania wszystkich książek.
@@ -22,8 +24,18 @@ public class BookFunction {
 
     //    Zwróć dwie ostatnie książki.
     public List<Book> znajdz2(List<Book> books) {
-        return books.subList(4, 6);
+        //return books.subList(4, 6);
+        return books.stream().skip(books.size()-2).collect(Collectors.toList());
+
     }
+//    public List<Book> oldestBookStream(List<Book>bookies){
+//        return bookies.stream().min(bookies.get().year).collect(Collectors.toList());
+
+
+
+
+
+
 
 
 //    //Zwróć najwcześniej wydana książkę.
@@ -46,23 +58,23 @@ public class BookFunction {
             suma = suma + book.year;
         }
         return suma;
-
+    }
+    public int dodajStream(List<Book>bookies){
+        return bookies.stream().mapToInt(h -> h.year).sum();
     }
 
     public List<Book> checkIfBookWasRealesAfter2007(List<Book> bookies) {
         List<Book> booksAfter2007 = new ArrayList<>();
-
         for (Book booky : bookies) {
             if (booky.year >= 2007) {
-                booksAfter2007.add(booky);
-
-
-            }
-
+                booksAfter2007.add(booky); }
         }
         return booksAfter2007;
-
     }
+    public long checkIfBookWasRealesAfter2007Stream(List<Book> bookies){
+        return bookies.stream().filter(book -> book.year>=2007).count();
+    }
+
 
     public boolean checkIfbooksIsRealesAfter2000(List<Book> bookies) {
         for (Book booky : bookies) {
@@ -71,6 +83,10 @@ public class BookFunction {
             }
         }
         return true;
+
+    }
+    public boolean checkIfbooksIsRealesAfter2000Stream (List<Book> bookies){
+        return bookies.stream().noneMatch(book -> book.year<2000);
     }
 
     public double returnMiddleAge(List<Book> bookies) {
@@ -81,6 +97,10 @@ public class BookFunction {
         }
         return sum / 6;
     }
+    public double returnMiddleAgeStream(List<Book> bookies){
+        return bookies.stream().mapToDouble(books->books.year).average().getAsDouble();
+    }
+
 
     // Zwróć informacje o tym czy jakakolwiek książka w naszym katalogu jest wydana przed  2003 rokiem.
     public List<Book> checkIfBookWasRealseBefor2003(List<Book> bookies) {
@@ -123,11 +143,22 @@ public class BookFunction {
         Map<String, Book> returnM = new HashMap<>();
         returnM.put(ibdn, (Book) bookies);
         return returnM;
-        // TODO
+
+    }
+//    public int sortByNewest (List<Book> bookies){
+//        List<Book>sortBy = new ArrayList<>();
+//        for (Book booky : bookies) {
+//            Collections.sort(booky.year);
+//
+//        }
+//
+//        }
+
+
     }
 
 
-}
+
 
 
 
