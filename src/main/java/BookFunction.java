@@ -28,8 +28,8 @@ public class BookFunction {
         return books.stream().skip(books.size()-2).collect(Collectors.toList());
 
     }
-//    public List<Book> oldestBookStream(List<Book>bookies){
-//        return bookies.stream().min(bookies.get().year).collect(Collectors.toList());
+   public List<Book> oldestBookStream(List<Book>bookies){
+      return bookies.stream().min(bookies.get().year).collect(Collectors.toList());
 
 
 

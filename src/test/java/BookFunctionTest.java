@@ -15,12 +15,12 @@ public class BookFunctionTest {
    @Before
  public void metoda() {
 
-    books.add(new Book(132,"Buszujący w zbożu",1956,"IBDN25","T",null,null));
-    books.add(new Book(155,"Władca Pierscieni",1931,"IBDN01","T",null,null));
-    books.add(new Book(105,"Faust",1822,"IBDN55","M",null,null));
-    books.add(new Book(666,"Potop",1901,"IBDN23","M",null,null));
-    books.add(new Book(132,"Detoks",1987,"IBDN211","T",null,null));
-    books.add(new Book(133,"Wojna",2000,"IBDN01","T",null,null));
+    books.add(new Book(132,"Buszujący w zbożu","IBDN25",1956,"T",null,null));
+    books.add(new Book(155,"Władca Pierscieni","IBDN01",1939,"T",null,null));
+    books.add(new Book(105,"Faust","IBDN25",1822,"M",null,null));
+    books.add(new Book(666,"Potop","IBDN23",1903,"M",null,null));
+    books.add(new Book(132,"Detoks","IBDN88",2015,"T",null,null));
+    books.add(new Book(133,"Wojna","IBDN123",1920,"T",null,null));
 
 
 }
@@ -40,14 +40,20 @@ public class BookFunctionTest {
    }
 //   @Test
 //   public void test3(){
-//      Book oldestbook = bookFunction.oldestBook(books);
-//      System.out.println(oldestbook);
-//   }
+//      List<Book> = bookFunction.oldestBookStream(books);
+// System.out.println(oldestBookStream);
+// }
 
 @Test
    public void test5(){
       int dodaj = bookFunction.dodaj(books);
       Assert.assertEquals(11548,dodaj);
+
+}
+@Test
+public void test5Stream(){
+      int dodajStream = bookFunction.dodajStream(books);
+      Assert.assertEquals(11597,dodajStream);
 }
 @Test
    public void test6() {
@@ -55,11 +61,22 @@ public class BookFunctionTest {
    System.out.println(check);
    Assert.assertEquals(check.get(0).tittle, "Wojna");
 }
+
+
    @Test
     public void test7(){
       boolean check2000= bookFunction.checkIfbooksIsRealesAfter2000(books);
       System.out.println(check2000);
       Assert.assertEquals(false,check2000);
+
+   }
+   @Test
+   public void test7Stream(){
+      boolean check2000= bookFunction.checkIfbooksIsRealesAfter2000Stream(books);
+      System.out.println(check2000);
+      Assert.assertEquals(false,check2000);
+
+
 
    }
    @Test
@@ -92,6 +109,10 @@ public class BookFunctionTest {
    public void test12(){
      // Map<String,Book>retM = bookFunction.returnMap("IBDN23",(Book));
      // TODO
+   }
+   @Test
+   public void test13(){
+
    }
 
 
