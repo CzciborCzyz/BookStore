@@ -1,6 +1,4 @@
 
-=
-books (2).csv,e\3\e3a629c53c7fe5885666d373640392cec6c3a842
 G
 src/main/java/Book.java,4\2\42297ce8fc0b8d7f0f2def38213cbd135c18d8db
 >
@@ -17,3 +15,10 @@ O
 src/main/java/BookFunction.java,1\2\1272609d004309b4007d333ab0c988bbe1660be5
 S
 #src/test/java/BookFunctionTest.java,5\4\54c2d667c6bb374d451d37705a3a06e2b1f42ec1
+=
+smiecitxt.csv,a\d\adeb60475b1d2bf4aef5ff988e2d42413d21c32a
+;
+authors.csv,5\6\56e3b45a7ed2b951a646442c7a1bc5be84765933
+:
+
+books2.csv,a\e\ae908c04cef7a9d8d267aa370c37ac1076e71ea6

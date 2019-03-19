@@ -1,35 +1,83 @@
 
-N
-squid:S1063"9Replace this use of System.out or System.err by a logger.(Î¤ˆC
-hsquid:S2095"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(µÎ Àúÿÿÿÿ
-T
-squid:S106F"9Replace this use of System.out or System.err by a logger.(©‰¤úÿÿÿÿ
+¤%squid:RedundantThrowsDeclarationCheckC"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(Æ¤´µ8øËŒ‰˜-
+?squid:S1643u"Use a StringBuilder instead.(‰¤‘ôÿÿÿÿÿ8øËŒ‰˜-
+W
+squid:S106Á"9Replace this use of System.out or System.err by a logger.(·åÈ¡8øËŒ‰˜-
+W
+squid:S106±"9Replace this use of System.out or System.err by a logger.(÷ËÀ«8øËŒ‰˜-
+hsquid:S2095/"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(µÎ Àúÿÿÿÿ
+U
+squid:S106¾"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
 [
-squid:S1067"9Replace this use of System.out or System.err by a logger.(‰®»çùÿÿÿÿ8¶úŠ÷“-
+squid:S106V"9Replace this use of System.out or System.err by a logger.(ˆ»„¹üÿÿÿÿ8øËŒ‰˜-
+[
+squid:S106X"9Replace this use of System.out or System.err by a logger.(òå¾øüÿÿÿÿ8øËŒ‰˜-
+[
+squid:S106x"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ8øËŒ‰˜-
+[
+squid:S106z"9Replace this use of System.out or System.err by a logger.(ƒÇÿ­ûÿÿÿÿ8øËŒ‰˜-
+¤%squid:RedundantThrowsDeclarationCheckR"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(§ ±…8øËŒ‰˜-
+W
+squid:S106Î"9Replace this use of System.out or System.err by a logger.(òçˆ8øËŒ‰˜-
+_squid:S1854"<Remove this useless assignment to local variable "authors2".(Ìê¿ßûÿÿÿÿ8øËŒ‰˜-
+U
+squid:S106J"9Replace this use of System.out or System.err by a logger.(Í¡78øËŒ‰˜-
+Hsquid:S00108l")Either remove or fill this block of code.(ï­£Ä8øËŒ‰˜-
+W
+squid:S106µ"9Replace this use of System.out or System.err by a logger.(ŒâœÂ8øËŒ‰˜-
+O
+squid:S106ª"9Replace this use of System.out or System.err by a logger.(Î¤ˆC
+U
+squid:S106·"9Replace this use of System.out or System.err by a logger.(ŞÒ—üÿÿÿÿ
+P
+squid:S106‚"9Replace this use of System.out or System.err by a logger.(·åÈ¡
 T
-squid:S1064"9Replace this use of System.out or System.err by a logger.(Ò“ğ½üÿÿÿÿ
-hsquid:S2095"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(µÎ Àúÿÿÿÿ
-Esquid:S1481".Remove this unused "authorsId" local variable.(³©ÓÒ
-T
-squid:S106?"9Replace this use of System.out or System.err by a logger.(¤Û‡ãşÿÿÿÿ
-Tsquid:S1854"=Remove this useless assignment to local variable "authorsId".(³©ÓÒ
-T
-squid:S1069"9Replace this use of System.out or System.err by a logger.(ŞÒ—üÿÿÿÿ
-T
-squid:S1066"9Replace this use of System.out or System.err by a logger.(àŠÅñüÿÿÿÿ
-T
-squid:S1065"9Replace this use of System.out or System.err by a logger.(èœËÿÿÿÿÿ
+squid:S106F"9Replace this use of System.out or System.err by a logger.(Â×ˆéûÿÿÿÿ
+\
+squid:S106´"9Replace this use of System.out or System.err by a logger.(Ãì°’ıÿÿÿÿ8øËŒ‰˜-
+P
+squid:S106º"9Replace this use of System.out or System.err by a logger.(ŠÜö›
+hsquid:S2095:"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(µÎ Àúÿÿÿÿ
+W
+squid:S106•"9Replace this use of System.out or System.err by a logger.(äüÃâ8øËŒ‰˜-
+\
+squid:S106Œ"9Replace this use of System.out or System.err by a logger.(¯•¶îıÿÿÿÿ8øËŒ‰˜-
+U
+squid:S106¶"9Replace this use of System.out or System.err by a logger.(°éîŠûÿÿÿÿ
+Psquid:S11355"2Complete the task associated to this TODO comment.(ù®ñ³8øËŒ‰˜-
 1squid:S1220""Move this file to a named package.
-T
-squid:S1068"9Replace this use of System.out or System.err by a logger.(°éîŠûÿÿÿÿ
-hsquid:S2095$"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(µÎ Àúÿÿÿÿ
-T
-squid:S106="9Replace this use of System.out or System.err by a logger.(ŞÒ—üÿÿÿÿ
->squid:S21892""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ
-Isquid:S1199E"-Extract this nested code block into a method.(ÒÌâ–øÿÿÿÿ
-O
-squid:S106C"9Replace this use of System.out or System.err by a logger.(·åÈ¡
-O
-squid:S106<"9Replace this use of System.out or System.err by a logger.(ŠÜö›
-T
-squid:S106@"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+V
+squid:S106H"9Replace this use of System.out or System.err by a logger.(º‚½÷8øËŒ‰˜-
+[
+squid:S106r"9Replace this use of System.out or System.err by a logger.(õ¼ø¹ÿÿÿÿÿ8øËŒ‰˜-
+hsquid:S2095"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(µÎ Àúÿÿÿÿ
+U
+squid:S106­"9Replace this use of System.out or System.err by a logger.(àŠÅñüÿÿÿÿ
+\
+squid:S106³"9Replace this use of System.out or System.err by a logger.(Ò’æŠıÿÿÿÿ8øËŒ‰˜-
+U
+squid:S106½"9Replace this use of System.out or System.err by a logger.(¤Û‡ãşÿÿÿÿ
+\
+squid:S106°"9Replace this use of System.out or System.err by a logger.(„³×Ùùÿÿÿÿ8øËŒ‰˜-
+Psquid:S1481"-Remove this unused "authors2" local variable.(Ìê¿ßûÿÿÿÿ8øËŒ‰˜-
+\
+squid:S106Ü"9Replace this use of System.out or System.err by a logger.(©‰¤úÿÿÿÿ8øËŒ‰˜-
+\
+squid:S106²"9Replace this use of System.out or System.err by a logger.(ÿ’«–ùÿÿÿÿ8øËŒ‰˜-
+Psquid:S1135@"2Complete the task associated to this TODO comment.(ù®ñ³8øËŒ‰˜-
+Isquid:S00108Â")Either remove or fill this block of code.(Íãú‘8øËŒ‰˜-
+U
+squid:S106¬"9Replace this use of System.out or System.err by a logger.(èœËÿÿÿÿÿ
+[
+squid:S106T"9Replace this use of System.out or System.err by a logger.(Â»æşÿÿÿÿ8øËŒ‰˜-
+U
+squid:S106»"9Replace this use of System.out or System.err by a logger.(ŞÒ—üÿÿÿÿ
+\
+squid:S106®"9Replace this use of System.out or System.err by a logger.(‰®»çùÿÿÿÿ8¶úŠ÷“-
+\
+squid:S106¯"9Replace this use of System.out or System.err by a logger.(¿ôÚãıÿÿÿÿ8øËŒ‰˜-
+U
+squid:S106«"9Replace this use of System.out or System.err by a logger.(Ò“ğ½üÿÿÿÿ
+?squid:S2189©""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ
+\
+squid:S106‘"9Replace this use of System.out or System.err by a logger.(›ƒ°ˆûÿÿÿÿ8øËŒ‰˜-
